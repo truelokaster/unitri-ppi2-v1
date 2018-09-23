@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface MultaRepository extends JpaRepository <Multa,Long> {
+    Multa findByDescricao(String descricao);
 }

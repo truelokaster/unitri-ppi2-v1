@@ -1,11 +1,8 @@
 package com.example.demo.entity;
 
-import com.sun.javafx.beans.IDProperty;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
 
 @Entity
 public class Avaria {
@@ -13,7 +10,7 @@ public class Avaria {
     @Id
     @GeneratedValue
     private Long id;
-//    @NotNull
+    //    @NotNull
     private String descricao;
     private Double valor;
 
