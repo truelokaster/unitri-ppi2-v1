@@ -28,10 +28,10 @@ public class CategoriaService {
         return this.categoriaRepository.findByDescricao(descricao);
     }
 
-    public Categoria atualizarcategoria(Categoria categoria) {
-        Categoria categoriaexistente = this.categoriaRepository.getOne(categoria.getId());
-        categoriaexistente.setDescricao(categoria.getDescricao());
-        return this.categoriaRepository.save(categoriaexistente);
+    public Categoria atualizarCategoria(Categoria categoria) {
+        Categoria categoriaExistente = this.categoriaRepository.getOne(categoria.getId());
+        categoriaExistente.setDescricao(categoria.getDescricao());
+        return this.categoriaRepository.save(categoriaExistente);
     }
 
     public void deletarCategoria(Categoria categoria){
@@ -39,7 +39,7 @@ public class CategoriaService {
         this.categoriaRepository.delete(categoria);
     }
 
-    public List<Categoria> listartodasCategorias() {
+    public List<Categoria> listarTodasCategorias() {
 
         return this.categoriaRepository.findAll();
     }

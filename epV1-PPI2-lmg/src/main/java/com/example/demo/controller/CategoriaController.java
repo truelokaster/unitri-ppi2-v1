@@ -23,7 +23,7 @@ public class CategoriaController {
     @PutMapping
     public Categoria atualizarCategoria(@RequestBody Categoria categoria){
 
-        return this.categoriaService.atualizarcategoria(categoria);
+        return this.categoriaService.atualizarCategoria(categoria);
     }
 
     @DeleteMapping
@@ -35,7 +35,7 @@ public class CategoriaController {
     @GetMapping
     public List<Categoria> obterTodasCategorias() {
 
-        return categoriaService.listartodasCategorias();
+        return categoriaService.listarTodasCategorias();
     }
 
     @GetMapping("/descricao")
